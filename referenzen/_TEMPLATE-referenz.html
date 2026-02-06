@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{META_BESCHREIBUNG}}">
+    <meta name="robots" content="index, follow">
+
+    <title>{{TITEL}} | Referenz | TAB Luft- und Klimatechnik GmbH</title>
+
+    <link rel="canonical" href="https://www.tabgmbh.de/referenzen/{{SLUG}}.html">
+    <meta property="og:title" content="{{TITEL}} | Referenz | TAB GmbH">
+    <meta property="og:description" content="{{META_BESCHREIBUNG}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tabgmbh.de/referenzen/{{SLUG}}.html">
+    <meta property="og:image" content="https://www.tabgmbh.de/assets/images/referenzen/{{SLUG}}.jpg">
+    <meta property="og:locale" content="de_DE">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body class="page">
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="/" class="header__logo" aria-label="TAB GmbH – Zur Startseite">
+                <img src="/assets/logo.svg" alt="TAB Luft- und Klimatechnik GmbH" width="200" height="40">
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+                <svg class="nav-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            <nav class="nav" id="main-nav" aria-label="Hauptnavigation">
+                <ul class="nav__list">
+                    <li><a href="/" class="nav__link">Startseite</a></li>
+                    <li><a href="/ueber-uns.html" class="nav__link">Über uns</a></li>
+                    <li><a href="/leistungen.html" class="nav__link">Leistungen</a></li>
+                    <li><a href="/referenzen.html" class="nav__link" aria-current="page">Referenzen</a></li>
+                    <li><a href="/karriere.html" class="nav__link">Karriere</a></li>
+                    <li><a href="/kontakt.html" class="nav__link btn btn--primary btn--sm">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Detail-Banner -->
+        <section class="detail-banner">
+            <div class="detail-banner__bg">
+                <img src="/assets/images/referenzen/{{SLUG}}.jpg" alt="{{TITEL}} — {{ALT_TEXT}}">
+            </div>
+            <div class="container detail-banner__content">
+                <ul class="breadcrumb" aria-label="Brotkrümelnavigation">
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="/referenzen.html">Referenzen</a></li>
+                    <li><span class="breadcrumb--current">{{TITEL}}</span></li>
+                </ul>
+                <span class="badge badge--primary">{{BADGE}}</span>
+                <h1>{{TITEL}}</h1>
+            </div>
+        </section>
+
+        <!-- Detail-Inhalt -->
+        <section class="section">
+            <div class="container detail-layout">
+
+                <!-- Hauptinhalt -->
+                <div class="detail-content">
+                    <h2>Projektbeschreibung</h2>
+                    <p>{{BESCHREIBUNG_ABSATZ_1}}</p>
+                    <p>{{BESCHREIBUNG_ABSATZ_2}}</p>
+
+                    <h2>Leistungen im Detail</h2>
+                    <ul>
+                        <li>{{LEISTUNG_1}}</li>
+                        <li>{{LEISTUNG_2}}</li>
+                        <li>{{LEISTUNG_3}}</li>
+                        <!-- Weitere Leistungen nach Bedarf -->
+                    </ul>
+
+                    <!-- Bildergalerie (optional) -->
+                    <!--
+                    <div class="gallery-grid">
+                        <img src="/assets/images/referenzen/{{SLUG}}-1.jpg" alt="{{GALERIE_ALT_1}}" loading="lazy">
+                        <img src="/assets/images/referenzen/{{SLUG}}-2.jpg" alt="{{GALERIE_ALT_2}}" loading="lazy">
+                    </div>
+                    -->
+
+                    <a href="/referenzen.html" class="back-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                        Zurück zur Übersicht
+                    </a>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <div class="sidebar-box">
+                        <h3 class="sidebar-box__title">Projektdaten</h3>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Auftraggeber</span>
+                            <span class="sidebar-box__value">{{AUFTRAGGEBER}}</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Standort</span>
+                            <span class="sidebar-box__value">{{STANDORT}}</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Leistungen</span>
+                            <span class="sidebar-box__value">{{LEISTUNGEN_KURZ}}</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Vertragsart</span>
+                            <span class="sidebar-box__value">{{VERTRAGSART}}</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Zeitraum</span>
+                            <span class="sidebar-box__value">{{ZEITRAUM}}</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- Kontakt CTA -->
+        <section class="section section--alt" aria-labelledby="kontakt-ref-detail">
+            <div class="container" style="text-align: center; max-width: 40rem;">
+                <span class="tagline">Kontakt</span>
+                <h2 id="kontakt-ref-detail">Sprechen Sie uns an</h2>
+                <p>Ob Anfrage, Beratung oder Angebot — wir sind für Sie da.</p>
+                <div style="display: inline-flex; gap: var(--space-lg); margin-top: var(--space-lg); flex-wrap: wrap; justify-content: center;">
+                    <a href="tel:+495147978108" class="btn btn--primary">05147 / 97 81 08</a>
+                    <a href="mailto:info@tabgmbh.de" class="btn btn--outline">info@tabgmbh.de</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="TAB GmbH – Zur Startseite">
+                        <img src="/assets/logo.svg" alt="TAB Luft- und Klimatechnik GmbH" width="160" height="32">
+                    </a>
+                    <p>Luft- und Klimatechnik aus Uetze bei Hannover. Ihr Fachbetrieb für Lüftung, Klima und Heizung.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <div class="footer__links">
+                        <a href="/">Startseite</a>
+                        <a href="/ueber-uns.html">Über uns</a>
+                        <a href="/leistungen.html">Leistungen</a>
+                        <a href="/referenzen.html">Referenzen</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Unternehmen</h4>
+                    <div class="footer__links">
+                        <a href="/karriere.html">Karriere</a>
+                        <a href="/zertifikate.html">Zertifikate</a>
+                        <a href="/kontakt.html">Kontakt</a>
+                        <a href="/impressum.html">Impressum</a>
+                        <a href="/datenschutz.html">Datenschutz</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Kontakt</h4>
+                    <div class="footer__links">
+                        <a href="tel:+495147978108">05147 / 97 81 08</a>
+                        <a href="mailto:info@tabgmbh.de">info@tabgmbh.de</a>
+                        <span>Mo – Fr: 8:00 – 16:30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 TAB Luft- und Klimatechnik GmbH. Alle Rechte vorbehalten.</span>
+                <div class="footer__legal">
+                    <a href="/impressum.html">Impressum</a>
+                    <a href="/datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner" role="alert">
+        <p>Diese Website verwendet ausschließlich technisch notwendige Cookies.</p>
+        <button class="btn btn--sm btn--white" id="cookie-accept">OK</button>
+    </div>
+
+    <script src="/js/navigation.js" defer></script>
+</body>
+</html>

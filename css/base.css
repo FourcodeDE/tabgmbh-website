@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Base Styles -- Grundlegende Styles (Body, Links, Typografie)
+   ========================================================================== */
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    color: var(--color-text-body);
+    background-color: var(--color-bg);
+}
+
+/* --- Ueberschriften --- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    font-size: var(--font-size-3xl);
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+}
+
+h4 {
+    font-size: var(--font-size-lg);
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: var(--font-size-4xl); }
+    h2 { font-size: var(--font-size-3xl); }
+    h3 { font-size: var(--font-size-2xl); }
+    h4 { font-size: var(--font-size-xl); }
+}
+
+/* --- Text --- */
+
+p {
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+/* --- Links --- */
+
+a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+/* --- Listen (innerhalb von Content) --- */
+
+.content ul,
+.content ol {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+}
+
+.content ul {
+    list-style: disc;
+}
+
+.content ol {
+    list-style: decimal;
+}
+
+.content li {
+    margin-bottom: var(--space-xs);
+}
+
+/* --- Bilder --- */
+
+img {
+    border-radius: var(--border-radius-sm);
+}
+
+/* --- Auswahl --- */
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+}
+
+/* --- Skip-Navigation (Barrierefreiheit) --- */
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-primary);
+    color: var(--color-text-white);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+    z-index: 1000;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+}

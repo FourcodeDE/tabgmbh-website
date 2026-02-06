@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{META_BESCHREIBUNG}}">
+    <meta name="robots" content="index, follow">
+
+    <title>{{JOBTITEL}} | Karriere | TAB GmbH</title>
+
+    <link rel="canonical" href="https://www.tabgmbh.de/karriere/{{SLUG}}.html">
+    <meta property="og:title" content="{{JOBTITEL}} | Karriere | TAB GmbH">
+    <meta property="og:description" content="{{META_BESCHREIBUNG}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tabgmbh.de/karriere/{{SLUG}}.html">
+    <meta property="og:image" content="https://www.tabgmbh.de/assets/images/og-image.jpg">
+    <meta property="og:locale" content="de_DE">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+
+    <!-- Google Jobs JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "{{JOBTITEL}}",
+        "description": "{{BESCHREIBUNG_HTML}}",
+        "datePosted": "{{DATUM_ISO}}",
+        "validThrough": "{{ABLAUFDATUM_ISO}}",
+        "employmentType": "{{ANSTELLUNGSART}}",
+        "hiringOrganization": {
+            "@type": "Organization",
+            "name": "TAB Luft- und Klimatechnik GmbH",
+            "sameAs": "https://www.tabgmbh.de",
+            "logo": "https://www.tabgmbh.de/assets/logo.svg"
+        },
+        "jobLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Windmühlenstraße 18",
+                "addressLocality": "Uetze/Hänigsen",
+                "postalCode": "31311",
+                "addressRegion": "Niedersachsen",
+                "addressCountry": "DE"
+            }
+        },
+        "applicantLocationRequirements": {
+            "@type": "Country",
+            "name": "DE"
+        }
+    }
+    </script>
+</head>
+<body class="page">
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="/" class="header__logo" aria-label="TAB GmbH – Zur Startseite">
+                <img src="/assets/logo.svg" alt="TAB Luft- und Klimatechnik GmbH" width="200" height="40">
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+                <svg class="nav-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+            <nav class="nav" id="main-nav" aria-label="Hauptnavigation">
+                <ul class="nav__list">
+                    <li><a href="/" class="nav__link">Startseite</a></li>
+                    <li><a href="/ueber-uns.html" class="nav__link">Über uns</a></li>
+                    <li><a href="/leistungen.html" class="nav__link">Leistungen</a></li>
+                    <li><a href="/referenzen.html" class="nav__link">Referenzen</a></li>
+                    <li><a href="/karriere.html" class="nav__link" aria-current="page">Karriere</a></li>
+                    <li><a href="/kontakt.html" class="nav__link btn btn--primary btn--sm">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Detail-Banner -->
+        <section class="detail-banner">
+            <div class="container detail-banner__content">
+                <ul class="breadcrumb" aria-label="Brotkrümelnavigation">
+                    <li><a href="/">Startseite</a></li>
+                    <li><a href="/karriere.html">Karriere</a>
+                        <a href="/zertifikate.html">Zertifikate</a></li>
+                    <li><span class="breadcrumb--current">{{JOBTITEL_KURZ}}</span></li>
+                </ul>
+                <h1>{{JOBTITEL}}</h1>
+                <div class="job-meta-bar">
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Uetze bei Hannover
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        {{ARBEITSZEIT}}
+                    </span>
+                    <span class="badge badge--primary">{{BADGE}}</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail-Inhalt -->
+        <section class="section">
+            <div class="container detail-layout">
+
+                <!-- Hauptinhalt -->
+                <div class="detail-content">
+                    <h2>Stellenbeschreibung</h2>
+                    <p>{{STELLENBESCHREIBUNG}}</p>
+
+                    <h2>Ihre Aufgaben</h2>
+                    <ul>
+                        <li>{{AUFGABE_1}}</li>
+                        <li>{{AUFGABE_2}}</li>
+                        <li>{{AUFGABE_3}}</li>
+                        <!-- Weitere Aufgaben nach Bedarf -->
+                    </ul>
+
+                    <h2>Ihr Profil</h2>
+                    <ul>
+                        <li>{{PROFIL_1}}</li>
+                        <li>{{PROFIL_2}}</li>
+                        <li>{{PROFIL_3}}</li>
+                        <!-- Weitere Anforderungen nach Bedarf -->
+                    </ul>
+
+                    <h2>Wir bieten</h2>
+                    <ul>
+                        <li>{{BENEFIT_1}}</li>
+                        <li>{{BENEFIT_2}}</li>
+                        <li>{{BENEFIT_3}}</li>
+                        <!-- Weitere Benefits nach Bedarf -->
+                    </ul>
+
+                    <a href="/karriere.html" class="back-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+                        Alle Stellenangebote
+                    </a>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <div class="sidebar-apply">
+                        <h3>Interesse geweckt?</h3>
+                        <p>Senden Sie Ihre Bewerbungsunterlagen direkt per E-Mail:</p>
+                        <a href="mailto:r.tancredi@tabgmbh.de" class="sidebar-apply__email">r.tancredi@tabgmbh.de</a>
+                        <a href="mailto:r.tancredi@tabgmbh.de?subject=Bewerbung%20{{JOBTITEL_URL}}" class="btn btn--primary">Bewerbung senden</a>
+                    </div>
+                    <div class="sidebar-box">
+                        <h3 class="sidebar-box__title">Auf einen Blick</h3>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Standort</span>
+                            <span class="sidebar-box__value">Uetze bei Hannover</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Arbeitszeit</span>
+                            <span class="sidebar-box__value">{{ARBEITSZEIT}}</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Beginn</span>
+                            <span class="sidebar-box__value">{{BEGINN}}</span>
+                        </div>
+                        <div class="sidebar-box__row">
+                            <span class="sidebar-box__label">Kontakt</span>
+                            <span class="sidebar-box__value"><a href="mailto:r.tancredi@tabgmbh.de">r.tancredi@tabgmbh.de</a></span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo" aria-label="TAB GmbH – Zur Startseite">
+                        <img src="/assets/logo.svg" alt="TAB Luft- und Klimatechnik GmbH" width="160" height="32">
+                    </a>
+                    <p>Luft- und Klimatechnik aus Uetze bei Hannover. Ihr Fachbetrieb für Lüftung, Klima und Heizung.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <div class="footer__links">
+                        <a href="/">Startseite</a>
+                        <a href="/ueber-uns.html">Über uns</a>
+                        <a href="/leistungen.html">Leistungen</a>
+                        <a href="/referenzen.html">Referenzen</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Unternehmen</h4>
+                    <div class="footer__links">
+                        <a href="/karriere.html">Karriere</a>
+                        <a href="/zertifikate.html">Zertifikate</a>
+                        <a href="/kontakt.html">Kontakt</a>
+                        <a href="/impressum.html">Impressum</a>
+                        <a href="/datenschutz.html">Datenschutz</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Kontakt</h4>
+                    <div class="footer__links">
+                        <a href="tel:+495147978108">05147 / 97 81 08</a>
+                        <a href="mailto:info@tabgmbh.de">info@tabgmbh.de</a>
+                        <span>Mo – Fr: 8:00 – 16:30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 TAB Luft- und Klimatechnik GmbH. Alle Rechte vorbehalten.</span>
+                <div class="footer__legal">
+                    <a href="/impressum.html">Impressum</a>
+                    <a href="/datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookie-banner" role="alert">
+        <p>Diese Website verwendet ausschließlich technisch notwendige Cookies.</p>
+        <button class="btn btn--sm btn--white" id="cookie-accept">OK</button>
+    </div>
+
+    <script src="/js/navigation.js" defer></script>
+</body>
+</html>

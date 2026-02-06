@@ -1,0 +1,970 @@
+/* ==========================================================================
+   Pages -- Seitenspezifische Anpassungen
+   ========================================================================== */
+
+/* --- Hero-Bereich (Startseite + Unterseiten) --- */
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    padding-block: var(--space-3xl);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-white);
+    overflow: hidden;
+}
+
+.hero--home {
+    min-height: 80vh;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    opacity: 0.3;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__content h1 {
+    max-width: 44rem;
+    color: var(--color-text-white);
+    margin-bottom: var(--space-md);
+}
+
+.hero__content p {
+    max-width: 38rem;
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+}
+
+/* --- Page Header (Unterseiten) --- */
+
+.page-header {
+    padding-block: var(--space-xl);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-white);
+}
+
+.page-header h1 {
+    color: var(--color-text-white);
+    margin-bottom: var(--space-sm);
+}
+
+.page-header p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-lg);
+}
+
+/* --- Vertrauenselemente --- */
+
+.trust-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.trust-bar__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.trust-bar__item svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-accent);
+}
+
+/* --- Referenz-Detail --- */
+
+.project-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-xl);
+}
+
+.project-meta dt {
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-meta dd {
+    color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+    .project-meta {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- Karriere / Job-Detail --- */
+
+.job-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+    margin-bottom: var(--space-xl);
+}
+
+.job-header h1 {
+    width: 100%;
+}
+
+/* --- Impressum / Datenschutz --- */
+
+.legal-content h2 {
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.legal-content h3 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.legal-content p,
+.legal-content ul,
+.legal-content ol {
+    margin-bottom: var(--space-md);
+}
+
+.legal-content ul {
+    list-style: disc;
+    padding-left: var(--space-lg);
+}
+
+.legal-content ol {
+    list-style: decimal;
+    padding-left: var(--space-lg);
+}
+
+.legal-content li {
+    margin-bottom: var(--space-xs);
+}
+
+/* --- 404-Seite --- */
+
+.error-page {
+    text-align: center;
+    padding-block: var(--space-3xl);
+}
+
+.error-page__code {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--color-border);
+    line-height: 1;
+}
+
+.error-page h1 {
+    margin-bottom: var(--space-md);
+}
+
+.error-page p {
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-muted);
+}
+
+/* --- Brandschutz Nische --- */
+
+.niche {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-white);
+    padding-block: var(--space-2xl);
+}
+
+.niche h2 {
+    color: var(--color-text-white);
+    margin-bottom: var(--space-md);
+}
+
+.niche p {
+    color: rgba(255, 255, 255, 0.73);
+    line-height: 1.7;
+}
+
+.niche__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-md);
+}
+
+.niche__icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--color-accent);
+}
+
+.niche__feature {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.87);
+    margin-bottom: var(--space-md);
+}
+
+.niche__feature:last-child {
+    margin-bottom: 0;
+}
+
+.niche__feature svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-accent);
+}
+
+/* --- Job-Listing (Karriere-Teaser) --- */
+
+.job-listing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow var(--transition-base),
+                transform var(--transition-base);
+}
+
+.job-listing:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    color: inherit;
+}
+
+.job-listing__title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.job-listing__meta {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-body);
+}
+
+.job-listing__arrow {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+}
+
+/* --- Karriere-Seite: Benefit-Cards --- */
+
+.benefit-card {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--border-radius-sm);
+}
+
+.benefit-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto var(--space-md);
+    background-color: var(--color-primary-light);
+    border-radius: 50%;
+}
+
+.benefit-card__icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--color-primary);
+}
+
+.benefit-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.benefit-card__text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-body);
+}
+
+/* --- Job-Detail --- */
+
+.job-detail {
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    padding: var(--space-xl);
+}
+
+.job-detail h3 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.job-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.job-detail li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-body);
+}
+
+.job-detail li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+/* --- Bewerbungshinweis --- */
+
+.apply-cta {
+    text-align: center;
+    padding: var(--space-xl);
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius-sm);
+}
+
+.apply-cta__email {
+    font-family: var(--font-body);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* --- Ueber uns: Team-Karten --- */
+
+.team-card {
+    text-align: center;
+    padding: var(--space-xl);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.team-card__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto var(--space-md);
+    background-color: var(--color-primary-light);
+    border-radius: 50%;
+    color: var(--color-primary);
+}
+
+.team-card__avatar svg {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.team-card__role {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.team-card__text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-body);
+}
+
+/* --- Team Facts Box --- */
+
+.team-facts {
+    background-color: var(--color-primary-dark);
+    border-radius: var(--border-radius);
+    padding: var(--space-xl);
+    color: var(--color-text-white);
+}
+
+.team-facts h3 {
+    color: var(--color-text-white);
+    margin-bottom: var(--space-lg);
+}
+
+.team-facts__item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.team-facts__item:last-child {
+    margin-bottom: 0;
+}
+
+.team-facts__item svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-accent);
+}
+
+/* --- Qualifikations-Karten --- */
+
+.qual-card {
+    text-align: center;
+    padding: var(--space-xl);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.qual-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto var(--space-md);
+    background-color: var(--color-primary-light);
+    border-radius: 50%;
+    color: var(--color-primary);
+}
+
+.qual-card__icon svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.qual-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.qual-card__text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-body);
+}
+
+/* --- Referenzen-Uebersicht --- */
+
+.ref-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .ref-card {
+        flex-direction: row;
+    }
+
+    .ref-card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+.ref-card__image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .ref-card__image {
+        width: 45%;
+        aspect-ratio: auto;
+        min-height: 24rem;
+    }
+}
+
+.ref-card__body {
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+    .ref-card__body {
+        flex: 1;
+    }
+}
+
+.ref-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-2xl);
+    color: var(--color-text);
+}
+
+.ref-card__text {
+    color: var(--color-text-body);
+    line-height: 1.7;
+}
+
+.ref-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.ref-card__tag {
+    padding: 0.25rem 0.625rem;
+    font-size: var(--font-size-sm);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-text-body);
+}
+
+/* --- Kontakt-Seite --- */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+/* ==========================================================================
+   Detail-Seiten (Referenz-Detail, Karriere-Detail)
+   ========================================================================== */
+
+/* --- Detail-Layout (Main + Sidebar) --- */
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+    .detail-layout {
+        grid-template-columns: 1fr 360px;
+        align-items: start;
+    }
+}
+
+/* --- Detail-Banner --- */
+
+.detail-banner {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 280px;
+    padding-block: 3rem;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-white);
+    overflow: hidden;
+}
+
+.detail-banner__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.detail-banner__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    opacity: 0.2;
+}
+
+.detail-banner__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.detail-banner h1 {
+    color: var(--color-text-white);
+    margin-bottom: 0;
+}
+
+/* --- Breadcrumb --- */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xs);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8125rem;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.breadcrumb li + li::before {
+    content: "/";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.breadcrumb a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-text-white);
+}
+
+.breadcrumb .breadcrumb--current {
+    color: var(--color-text-white);
+    font-weight: 500;
+}
+
+/* --- Sidebar-Box --- */
+
+.sidebar-box {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar-box__title {
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    color: var(--color-text);
+}
+
+.sidebar-box__row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.sidebar-box__row:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.sidebar-box__label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-box__value {
+    font-size: 0.875rem;
+    color: var(--color-text);
+}
+
+/* --- Gallery-Grid --- */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-block: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+}
+
+.gallery-grid--full {
+    grid-column: 1 / -1;
+}
+
+/* --- Detail Content --- */
+
+.detail-content h2 {
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+.detail-content h2:first-child {
+    margin-top: 0;
+}
+
+.detail-content p {
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+}
+
+.detail-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--space-md);
+}
+
+.detail-content li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-body);
+}
+
+.detail-content li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+/* --- Back-Link --- */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-top: var(--space-xl);
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.back-link svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* --- Job-Detail-Seite: Meta-Leiste --- */
+
+.job-meta-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: var(--space-md);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(232, 244, 253, 1);
+}
+
+.job-meta-bar > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.job-meta-bar svg {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+/* --- Sidebar Apply-CTA (Karriere-Detail) --- */
+
+.sidebar-apply {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: var(--space-lg);
+}
+
+.sidebar-apply h3 {
+    font-family: var(--font-heading);
+    font-size: 1.375rem;
+    color: var(--color-text);
+}
+
+.sidebar-apply p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-body);
+}
+
+.sidebar-apply__email {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-top: -0.25rem;
+}
+
+.sidebar-apply__email:hover {
+    text-decoration: underline;
+}
+
+.sidebar-apply .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* --- Zertifikate-Seite --- */
+
+.cert-category {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    padding-top: var(--space-xl);
+}
+
+.cert-category:first-of-type {
+    padding-top: 0;
+}
+
+.cert-category svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.cert-grid--compact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+    .cert-grid--compact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cert-grid--compact {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.cert-card--compact {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.cert-card--compact:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-color: var(--color-primary);
+}
+
+.cert-card--compact .cert-card__body {
+    flex: 1;
+    min-width: 0;
+}
+
+.cert-card--compact .cert-card__title {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.cert-card--compact .cert-card__meta {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: 0.125rem;
+}
+
+.cert-card__open {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-text-muted);
+    opacity: 0.4;
+    transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.cert-card--compact:hover .cert-card__open {
+    opacity: 1;
+    color: var(--color-primary);
+}
