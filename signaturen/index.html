@@ -14,9 +14,13 @@
   .subtitle { font-size: 14px; color: #666; margin: 0 0 24px 0; }
   .sig-header { display: flex; align-items: center; justify-content: space-between; border-top: 2px solid #e0e0e0; padding-top: 16px; margin-bottom: 16px; }
   .sig-name { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold; }
-  .copy-btn { background: #0078C1; color: #fff; border: none; padding: 8px 18px; border-radius: 4px; font-size: 13px; font-weight: bold; cursor: pointer; transition: all 0.2s; }
+  .btn-group { display: flex; gap: 8px; flex-shrink: 0; }
+  .copy-btn, .dl-btn { color: #fff; border: none; padding: 8px 18px; border-radius: 4px; font-size: 13px; font-weight: bold; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block; }
+  .copy-btn { background: #0078C1; }
   .copy-btn:hover { background: #00395B; }
   .copy-btn.copied { background: #2e7d32; }
+  .dl-btn { background: #00395B; }
+  .dl-btn:hover { background: #0078C1; }
   .sig-container { border: 1px solid #eee; border-radius: 4px; padding: 16px; margin-bottom: 8px; background: #fafafa; }
   .anleitung ol { padding-left: 20px; }
   .anleitung li { margin-bottom: 12px; line-height: 1.6; font-size: 14px; }
@@ -41,7 +45,9 @@
     <h1>E-Mail-Signaturen</h1>
     <p class="subtitle">TAB Luft- und Klimatechnik GmbH &mdash; Finale Version</p>
     <p style="font-size: 14px; line-height: 1.6; margin: 0;">
-      Unten findest du die fertigen Signaturen f&uuml;r alle vier Mitarbeiter. Klicke auf <strong>&bdquo;Signatur kopieren&ldquo;</strong>, &ouml;ffne die Signatur-Einstellungen in deinem E-Mail-Programm und f&uuml;ge sie dort ein.
+      Unten findest du die fertigen Signaturen f&uuml;r alle vier Mitarbeiter.<br/><br/>
+      <strong>F&uuml;r Outlook Desktop:</strong> Klicke auf <strong>&bdquo;Outlook Download&ldquo;</strong> und folge der Anleitung unten.<br/>
+      <strong>F&uuml;r Webmail / andere Programme:</strong> Klicke auf <strong>&bdquo;Kopieren&ldquo;</strong> und f&uuml;ge die Signatur in den Einstellungen ein.
     </p>
   </div>
 
@@ -50,7 +56,10 @@
   <div class="card">
     <div class="sig-header">
       <span class="sig-name">Michele Tancredi &mdash; Gesch&auml;ftsf&uuml;hrer</span>
-      <button class="copy-btn" onclick="copySignature('sig-michele', this)">Signatur kopieren</button>
+      <div class="btn-group">
+        <a class="dl-btn" href="download/michele-tancredi.htm" download="TAB-Signatur-Michele-Tancredi.htm">Outlook Download</a>
+        <button class="copy-btn" onclick="copySignature('sig-michele', this)">Kopieren</button>
+      </div>
     </div>
     <div class="sig-container" id="sig-michele">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
@@ -109,7 +118,10 @@
   <div class="card">
     <div class="sig-header">
       <span class="sig-name">Ramon Tancredi &mdash; Gesch&auml;ftsf&uuml;hrer</span>
-      <button class="copy-btn" onclick="copySignature('sig-ramon', this)">Signatur kopieren</button>
+      <div class="btn-group">
+        <a class="dl-btn" href="download/ramon-tancredi.htm" download="TAB-Signatur-Ramon-Tancredi.htm">Outlook Download</a>
+        <button class="copy-btn" onclick="copySignature('sig-ramon', this)">Kopieren</button>
+      </div>
     </div>
     <div class="sig-container" id="sig-ramon">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
@@ -168,7 +180,10 @@
   <div class="card">
     <div class="sig-header">
       <span class="sig-name">Tiziana Tancredi-Rinaldi &mdash; Kaufm. Leitung</span>
-      <button class="copy-btn" onclick="copySignature('sig-tiziana', this)">Signatur kopieren</button>
+      <div class="btn-group">
+        <a class="dl-btn" href="download/tiziana-tancredi-rinaldi.htm" download="TAB-Signatur-Tiziana-Tancredi-Rinaldi.htm">Outlook Download</a>
+        <button class="copy-btn" onclick="copySignature('sig-tiziana', this)">Kopieren</button>
+      </div>
     </div>
     <div class="sig-container" id="sig-tiziana">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
@@ -227,7 +242,10 @@
   <div class="card">
     <div class="sig-header">
       <span class="sig-name">Lothar Viehweger &mdash; Dipl.-Ing. (FH)</span>
-      <button class="copy-btn" onclick="copySignature('sig-lothar', this)">Signatur kopieren</button>
+      <div class="btn-group">
+        <a class="dl-btn" href="download/lothar-viehweger.htm" download="TAB-Signatur-Lothar-Viehweger.htm">Outlook Download</a>
+        <button class="copy-btn" onclick="copySignature('sig-lothar', this)">Kopieren</button>
+      </div>
     </div>
     <div class="sig-container" id="sig-lothar">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
@@ -298,16 +316,20 @@
     </div>
 
     <div id="tab-outlook" class="tab-content active">
-      <h3>Outlook (Desktop)</h3>
+      <h3>Outlook (Desktop) &mdash; Empfohlen: Download-Methode</h3>
+      <div class="hint">Copy-Paste funktioniert in Outlook Desktop leider nicht zuverl&auml;ssig, weil Outlook eine andere Darstellungs-Engine nutzt. Verwende stattdessen den <strong>&bdquo;Outlook Download&ldquo;</strong>-Button.</div>
       <ol>
-        <li>Klicke auf <strong>Datei</strong> &rarr; <strong>Optionen</strong> &rarr; <strong>E-Mail</strong> &rarr; <strong>Signaturen</strong></li>
-        <li>Klicke auf <strong>Neu</strong> und gib einen Namen ein (z.B. &bdquo;TAB GmbH&ldquo;)</li>
-        <li>Klicke in das Textfeld unten und f&uuml;ge die Signatur ein (<code>Strg+V</code>)</li>
-        <li>W&auml;hle unter &bdquo;Standardsignatur&ldquo; dein E-Mail-Konto und setze die Signatur f&uuml;r &bdquo;Neue Nachrichten&ldquo; und &bdquo;Antworten/Weiterleitungen&ldquo;</li>
+        <li>Klicke oben auf <strong>&bdquo;Outlook Download&ldquo;</strong> bei deinem Namen &mdash; eine <code>.htm</code>-Datei wird heruntergeladen</li>
+        <li>&Ouml;ffne den Windows Explorer und gib in die Adresszeile ein:<br/><code>%APPDATA%\Microsoft\Signatures</code> und dr&uuml;cke Enter</li>
+        <li>Kopiere die heruntergeladene <code>.htm</code>-Datei in diesen Ordner</li>
+        <li>&Ouml;ffne Outlook &rarr; <strong>Datei</strong> &rarr; <strong>Optionen</strong> &rarr; <strong>E-Mail</strong> &rarr; <strong>Signaturen</strong></li>
+        <li>Die Signatur erscheint jetzt in der Liste &mdash; w&auml;hle sie als Standard f&uuml;r &bdquo;Neue Nachrichten&ldquo; und &bdquo;Antworten/Weiterleitungen&ldquo;</li>
         <li>Klicke auf <strong>OK</strong></li>
       </ol>
       <h3>Outlook (Web / Microsoft 365)</h3>
+      <p>Im Web-Outlook funktioniert Copy-Paste problemlos:</p>
       <ol>
+        <li>Klicke oben auf <strong>&bdquo;Kopieren&ldquo;</strong> bei deinem Namen</li>
         <li>Klicke oben rechts auf das Zahnrad &rarr; <strong>Alle Outlook-Einstellungen anzeigen</strong></li>
         <li>Gehe zu <strong>E-Mail</strong> &rarr; <strong>Verfassen und Antworten</strong></li>
         <li>F&uuml;ge die Signatur in das Textfeld ein (<code>Strg+V</code>)</li>
