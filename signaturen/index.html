@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>E-Mail-Signaturen &mdash; TAB GmbH</title>
+<style>
+  body { margin: 0; padding: 0; background: #f5f5f5; font-family: Arial, Helvetica, sans-serif; color: #333; }
+  .page { max-width: 700px; margin: 0 auto; padding: 30px 20px; }
+  .card { background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); padding: 36px 40px; margin-bottom: 24px; }
+  h1 { font-size: 22px; color: #00395B; margin: 0 0 8px 0; }
+  h2 { font-size: 16px; color: #00395B; margin: 0 0 12px 0; }
+  h3 { font-size: 13px; color: #00395B; margin: 20px 0 8px 0; }
+  .subtitle { font-size: 14px; color: #666; margin: 0 0 24px 0; }
+  .sig-header { display: flex; align-items: center; justify-content: space-between; border-top: 2px solid #e0e0e0; padding-top: 16px; margin-bottom: 16px; }
+  .sig-name { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold; }
+  .copy-btn { background: #0078C1; color: #fff; border: none; padding: 8px 18px; border-radius: 4px; font-size: 13px; font-weight: bold; cursor: pointer; transition: all 0.2s; }
+  .copy-btn:hover { background: #00395B; }
+  .copy-btn.copied { background: #2e7d32; }
+  .sig-container { border: 1px solid #eee; border-radius: 4px; padding: 16px; margin-bottom: 8px; background: #fafafa; }
+  .anleitung ol { padding-left: 20px; }
+  .anleitung li { margin-bottom: 12px; line-height: 1.6; font-size: 14px; }
+  .anleitung strong { color: #00395B; }
+  .tab-nav { display: flex; gap: 0; margin-bottom: 0; border-bottom: 2px solid #e0e0e0; }
+  .tab-btn { background: none; border: none; padding: 10px 20px; font-size: 13px; font-weight: bold; color: #999; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; }
+  .tab-btn.active { color: #0078C1; border-bottom-color: #0078C1; }
+  .tab-content { display: none; padding: 20px 0; font-size: 14px; line-height: 1.7; }
+  .tab-content.active { display: block; }
+  .tab-content ol { padding-left: 20px; }
+  .tab-content li { margin-bottom: 8px; }
+  code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+  .hint { background: #FFF8E1; border-left: 3px solid #E8A435; padding: 12px 16px; border-radius: 0 4px 4px 0; font-size: 13px; margin: 16px 0; color: #5A4E00; }
+</style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: Arial, Helvetica, sans-serif;">
+<body>
 
-<!-- Outer wrapper -->
-<table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f5f5f5;">
-<tr><td align="center" style="padding: 30px 20px;">
+<div class="page">
 
-<!-- Content card -->
-<table cellpadding="0" cellspacing="0" border="0" width="640" style="max-width: 640px; background-color: #ffffff; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.08);">
-<tr><td style="padding: 40px 44px;">
-
-  <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0 0 16px 0;">
-    Hallo Ramon,
-  </p>
-
-  <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0 0 36px 0;">
-    hier sind die E-Mail-Signaturen f&uuml;r alle vier Mitarbeiter mit den eingearbeiteten Korrekturen:
-  </p>
+  <!-- Header -->
+  <div class="card">
+    <h1>E-Mail-Signaturen</h1>
+    <p class="subtitle">TAB Luft- und Klimatechnik GmbH &mdash; Finale Version</p>
+    <p style="font-size: 14px; line-height: 1.6; margin: 0;">
+      Unten findest du die fertigen Signaturen f&uuml;r alle vier Mitarbeiter. Klicke auf <strong>&bdquo;Signatur kopieren&ldquo;</strong>, &ouml;ffne die Signatur-Einstellungen in deinem E-Mail-Programm und f&uuml;ge sie dort ein.
+    </p>
+  </div>
 
 
-  <!-- ============================================
-       MICHELE TANCREDI
-       ============================================ -->
-
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 40px;">
-    <tr><td style="border-top: 2px solid #e0e0e0; padding-top: 16px; padding-bottom: 16px;">
-      <span style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold;">Michele Tancredi</span>
-    </td></tr>
-    <tr><td>
-
+  <!-- MICHELE TANCREDI -->
+  <div class="card">
+    <div class="sig-header">
+      <span class="sig-name">Michele Tancredi &mdash; Gesch&auml;ftsf&uuml;hrer</span>
+      <button class="copy-btn" onclick="copySignature('sig-michele', this)">Signatur kopieren</button>
+    </div>
+    <div class="sig-container" id="sig-michele">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
   <tr>
     <td style="background: #00395B; padding: 14px 20px; border-radius: 6px 6px 0 0;">
@@ -61,58 +80,20 @@
           <td width="16">&nbsp;</td>
           <td valign="top">
             <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #5A6B7D;">
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="mailto:m.tancredi@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">m.tancredi@tabgmbh.de</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a>
-                </td>
-              </tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="mailto:m.tancredi@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">m.tancredi@tabgmbh.de</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 12px; border-top: 1px solid #E2E8F0; padding-top: 10px;">
         <tr>
-          <td style="padding-top: 10px;">
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span>
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span>
-          </td>
+          <td style="padding-top: 10px;"><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span></td>
           <td align="right" valign="top" style="padding-top: 6px;">
             <table cellpadding="0" cellspacing="0" border="0"><tr>
-              <td style="padding-right: 4px;" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tr><td align="center">
-                    <img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" />
-                  </td></tr>
-                  <tr><td align="center">
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span>
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span>
-                  </td></tr>
-                </table>
-              </td>
-              <td valign="top">
-                <a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;">
-                  <img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" />
-                </a>
-              </td>
+              <td style="padding-right: 4px;" valign="top"><table cellpadding="0" cellspacing="0" border="0"><tr><td align="center"><img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" /></td></tr><tr><td align="center"><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span></td></tr></table></td>
+              <td valign="top"><a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;"><img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" /></a></td>
             </tr></table>
           </td>
         </tr>
@@ -120,21 +101,17 @@
     </td>
   </tr>
 </table>
+    </div>
+  </div>
 
-    </td></tr>
-  </table>
 
-
-  <!-- ============================================
-       RAMON TANCREDI
-       ============================================ -->
-
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 40px;">
-    <tr><td style="border-top: 2px solid #e0e0e0; padding-top: 16px; padding-bottom: 16px;">
-      <span style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold;">Ramon Tancredi</span>
-    </td></tr>
-    <tr><td>
-
+  <!-- RAMON TANCREDI -->
+  <div class="card">
+    <div class="sig-header">
+      <span class="sig-name">Ramon Tancredi &mdash; Gesch&auml;ftsf&uuml;hrer</span>
+      <button class="copy-btn" onclick="copySignature('sig-ramon', this)">Signatur kopieren</button>
+    </div>
+    <div class="sig-container" id="sig-ramon">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
   <tr>
     <td style="background: #00395B; padding: 14px 20px; border-radius: 6px 6px 0 0;">
@@ -162,58 +139,20 @@
           <td width="16">&nbsp;</td>
           <td valign="top">
             <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #5A6B7D;">
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="mailto:r.tancredi@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">r.tancredi@tabgmbh.de</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a>
-                </td>
-              </tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="mailto:r.tancredi@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">r.tancredi@tabgmbh.de</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 12px; border-top: 1px solid #E2E8F0; padding-top: 10px;">
         <tr>
-          <td style="padding-top: 10px;">
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span>
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span>
-          </td>
+          <td style="padding-top: 10px;"><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span></td>
           <td align="right" valign="top" style="padding-top: 6px;">
             <table cellpadding="0" cellspacing="0" border="0"><tr>
-              <td style="padding-right: 4px;" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tr><td align="center">
-                    <img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" />
-                  </td></tr>
-                  <tr><td align="center">
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span>
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span>
-                  </td></tr>
-                </table>
-              </td>
-              <td valign="top">
-                <a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;">
-                  <img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" />
-                </a>
-              </td>
+              <td style="padding-right: 4px;" valign="top"><table cellpadding="0" cellspacing="0" border="0"><tr><td align="center"><img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" /></td></tr><tr><td align="center"><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span></td></tr></table></td>
+              <td valign="top"><a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;"><img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" /></a></td>
             </tr></table>
           </td>
         </tr>
@@ -221,21 +160,17 @@
     </td>
   </tr>
 </table>
+    </div>
+  </div>
 
-    </td></tr>
-  </table>
 
-
-  <!-- ============================================
-       TIZIANA TANCREDI-RINALDI
-       ============================================ -->
-
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 40px;">
-    <tr><td style="border-top: 2px solid #e0e0e0; padding-top: 16px; padding-bottom: 16px;">
-      <span style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold;">Tiziana Tancredi-Rinaldi</span>
-    </td></tr>
-    <tr><td>
-
+  <!-- TIZIANA TANCREDI-RINALDI -->
+  <div class="card">
+    <div class="sig-header">
+      <span class="sig-name">Tiziana Tancredi-Rinaldi &mdash; Kaufm. Leitung</span>
+      <button class="copy-btn" onclick="copySignature('sig-tiziana', this)">Signatur kopieren</button>
+    </div>
+    <div class="sig-container" id="sig-tiziana">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
   <tr>
     <td style="background: #00395B; padding: 14px 20px; border-radius: 6px 6px 0 0;">
@@ -263,58 +198,20 @@
           <td width="16">&nbsp;</td>
           <td valign="top">
             <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #5A6B7D;">
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="mailto:t.tancredi@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">t.tancredi@tabgmbh.de</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a>
-                </td>
-              </tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="mailto:t.tancredi@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">t.tancredi@tabgmbh.de</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 12px; border-top: 1px solid #E2E8F0; padding-top: 10px;">
         <tr>
-          <td style="padding-top: 10px;">
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span>
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span>
-          </td>
+          <td style="padding-top: 10px;"><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span></td>
           <td align="right" valign="top" style="padding-top: 6px;">
             <table cellpadding="0" cellspacing="0" border="0"><tr>
-              <td style="padding-right: 4px;" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tr><td align="center">
-                    <img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" />
-                  </td></tr>
-                  <tr><td align="center">
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span>
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span>
-                  </td></tr>
-                </table>
-              </td>
-              <td valign="top">
-                <a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;">
-                  <img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" />
-                </a>
-              </td>
+              <td style="padding-right: 4px;" valign="top"><table cellpadding="0" cellspacing="0" border="0"><tr><td align="center"><img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" /></td></tr><tr><td align="center"><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span></td></tr></table></td>
+              <td valign="top"><a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;"><img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" /></a></td>
             </tr></table>
           </td>
         </tr>
@@ -322,21 +219,17 @@
     </td>
   </tr>
 </table>
+    </div>
+  </div>
 
-    </td></tr>
-  </table>
 
-
-  <!-- ============================================
-       LOTHAR VIEHWEGER
-       ============================================ -->
-
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom: 10px;">
-    <tr><td style="border-top: 2px solid #e0e0e0; padding-top: 16px; padding-bottom: 16px;">
-      <span style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999; text-transform: uppercase; letter-spacing: 1.5px; font-weight: bold;">Lothar Viehweger</span>
-    </td></tr>
-    <tr><td>
-
+  <!-- LOTHAR VIEHWEGER -->
+  <div class="card">
+    <div class="sig-header">
+      <span class="sig-name">Lothar Viehweger &mdash; Dipl.-Ing. (FH)</span>
+      <button class="copy-btn" onclick="copySignature('sig-lothar', this)">Signatur kopieren</button>
+    </div>
+    <div class="sig-container" id="sig-lothar">
 <table cellpadding="0" cellspacing="0" border="0" width="480" style="font-family: Arial, Helvetica, sans-serif; color: #1A2B3D; max-width: 480px;">
   <tr>
     <td style="background: #00395B; padding: 14px 20px; border-radius: 6px 6px 0 0;">
@@ -358,63 +251,26 @@
         <tr>
           <td valign="top" width="55%">
             <span style="font-size: 16px; font-weight: bold; color: #00395B; display: block; line-height: 1.2;">Lothar Viehweger</span>
+            <span style="font-size: 11px; color: #0078C1; text-transform: uppercase; letter-spacing: 1.2px; font-weight: bold; display: block; padding-top: 2px;">Dipl.-Ing. (FH) Versorgungstechnik</span>
           </td>
           <td width="1" style="background: #E2E8F0;">&nbsp;</td>
           <td width="16">&nbsp;</td>
           <td valign="top">
             <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #5A6B7D;">
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="mailto:l.viehweger@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">l.viehweger@tabgmbh.de</a>
-                </td>
-              </tr>
-              <tr>
-                <td width="28" valign="middle" style="padding: 3px 0;">
-                  <img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" />
-                </td>
-                <td style="padding: 3px 0;">
-                  <a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a>
-                </td>
-              </tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/phone.png" width="20" height="20" alt="Tel" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="tel:+495147978108" style="color: #5A6B7D; text-decoration: none; font-size: 12px;">05147 / 97 81 08</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/email.png" width="20" height="20" alt="Mail" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="mailto:l.viehweger@tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">l.viehweger@tabgmbh.de</a></td></tr>
+              <tr><td width="28" valign="middle" style="padding: 3px 0;"><img src="https://www.tabgmbh.de/assets/icons/globe.png" width="20" height="20" alt="Web" style="display: block; border: 0;" /></td><td style="padding: 3px 0;"><a href="https://www.tabgmbh.de" style="color: #0078C1; text-decoration: none; font-size: 12px;">www.tabgmbh.de</a></td></tr>
             </table>
           </td>
         </tr>
       </table>
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 12px; border-top: 1px solid #E2E8F0; padding-top: 10px;">
         <tr>
-          <td style="padding-top: 10px;">
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span>
-            <span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span>
-          </td>
+          <td style="padding-top: 10px;"><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Windm&uuml;hlenstra&szlig;e 18 &middot; 31311 Uetze-H&auml;nigsen</span><span style="font-size: 10px; color: #8A95A5; display: block; line-height: 1.5;">Zufahrt &uuml;ber Feldstra&szlig;e 28-30</span></td>
           <td align="right" valign="top" style="padding-top: 6px;">
             <table cellpadding="0" cellspacing="0" border="0"><tr>
-              <td style="padding-right: 4px;" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tr><td align="center">
-                    <img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" />
-                  </td></tr>
-                  <tr><td align="center">
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span>
-                    <span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span>
-                  </td></tr>
-                </table>
-              </td>
-              <td valign="top">
-                <a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;">
-                  <img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" />
-                </a>
-              </td>
+              <td style="padding-right: 4px;" valign="top"><table cellpadding="0" cellspacing="0" border="0"><tr><td align="center"><img src="https://www.tabgmbh.de/assets/icons/pq-vob.jpg" width="28" height="28" alt="PQ VOB" style="display: block; border: 0;" /></td></tr><tr><td align="center"><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block; padding-top: 1px;">Reg.-Nr:</span><span style="font-size: 7px; color: #8A95A5; line-height: 1.2; display: block;">001.702413</span></td></tr></table></td>
+              <td valign="top"><a href="https://www.facebook.com/tabgmbh.de" style="text-decoration: none;"><img src="https://www.tabgmbh.de/assets/icons/facebook.png" width="22" height="22" alt="Facebook" style="display: block; border: 0;" /></a></td>
             </tr></table>
           </td>
         </tr>
@@ -422,34 +278,109 @@
     </td>
   </tr>
 </table>
+    </div>
+  </div>
 
-    </td></tr>
-  </table>
 
+  <!-- ANLEITUNG -->
+  <div class="card anleitung">
+    <h2>Anleitung: Signatur einrichten</h2>
 
-  <!-- ============================================
-       CLOSING TEXT
-       ============================================ -->
+    <div class="hint">
+      Klicke oben auf &bdquo;Signatur kopieren&ldquo; bei deinem Namen. Die Signatur wird dabei mit allen Formatierungen und Bildern in die Zwischenablage kopiert.
+    </div>
 
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 20px;">
-    <tr><td style="border-top: 2px solid #e0e0e0; padding-top: 24px;">
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('outlook')">Outlook</button>
+      <button class="tab-btn" onclick="showTab('apple')">Apple Mail</button>
+      <button class="tab-btn" onclick="showTab('thunderbird')">Thunderbird</button>
+      <button class="tab-btn" onclick="showTab('webmail')">Webmail</button>
+    </div>
 
-      <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0 0 16px 0;">
-        Sag mir ob das so passt oder ob noch was ge&auml;ndert werden soll &mdash; wir haben noch eine Korrekturschleife.
-      </p>
+    <div id="tab-outlook" class="tab-content active">
+      <h3>Outlook (Desktop)</h3>
+      <ol>
+        <li>Klicke auf <strong>Datei</strong> &rarr; <strong>Optionen</strong> &rarr; <strong>E-Mail</strong> &rarr; <strong>Signaturen</strong></li>
+        <li>Klicke auf <strong>Neu</strong> und gib einen Namen ein (z.B. &bdquo;TAB GmbH&ldquo;)</li>
+        <li>Klicke in das Textfeld unten und f&uuml;ge die Signatur ein (<code>Strg+V</code>)</li>
+        <li>W&auml;hle unter &bdquo;Standardsignatur&ldquo; dein E-Mail-Konto und setze die Signatur f&uuml;r &bdquo;Neue Nachrichten&ldquo; und &bdquo;Antworten/Weiterleitungen&ldquo;</li>
+        <li>Klicke auf <strong>OK</strong></li>
+      </ol>
+      <h3>Outlook (Web / Microsoft 365)</h3>
+      <ol>
+        <li>Klicke oben rechts auf das Zahnrad &rarr; <strong>Alle Outlook-Einstellungen anzeigen</strong></li>
+        <li>Gehe zu <strong>E-Mail</strong> &rarr; <strong>Verfassen und Antworten</strong></li>
+        <li>F&uuml;ge die Signatur in das Textfeld ein (<code>Strg+V</code>)</li>
+        <li>Aktiviere &bdquo;Automatisch in neue Nachrichten einf&uuml;gen&ldquo;</li>
+        <li>Klicke auf <strong>Speichern</strong></li>
+      </ol>
+    </div>
 
-      <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333333; line-height: 1.6; margin: 0;">
-        Gru&szlig;<br/>Tim
-      </p>
+    <div id="tab-apple" class="tab-content">
+      <h3>Apple Mail (Mac)</h3>
+      <ol>
+        <li>&Ouml;ffne Apple Mail &rarr; <strong>Einstellungen</strong> &rarr; <strong>Signaturen</strong></li>
+        <li>W&auml;hle dein E-Mail-Konto links und klicke auf <strong>+</strong></li>
+        <li>Klicke in das rechte Vorschaufeld und f&uuml;ge die Signatur ein (<code>Cmd+V</code>)</li>
+        <li>W&auml;hle unter &bdquo;Signatur ausw&auml;hlen&ldquo; die neue Signatur</li>
+      </ol>
+      <div class="hint">Falls Bilder nicht angezeigt werden: In Apple Mail &rarr; <strong>Einstellungen</strong> &rarr; <strong>Datenschutz</strong> &rarr; Haken bei &bdquo;Entfernte Inhalte in Nachrichten laden&ldquo; setzen.</div>
+      <h3>Apple Mail (iPhone/iPad)</h3>
+      <ol>
+        <li>&Ouml;ffne <strong>Einstellungen</strong> &rarr; <strong>Mail</strong> &rarr; <strong>Signatur</strong></li>
+        <li>Tippe in das Textfeld und f&uuml;ge die Signatur ein</li>
+      </ol>
+    </div>
 
-    </td></tr>
-  </table>
+    <div id="tab-thunderbird" class="tab-content">
+      <h3>Thunderbird</h3>
+      <ol>
+        <li>Klicke auf das Hamburger-Men&uuml; &rarr; <strong>Kontoeinstellungen</strong></li>
+        <li>W&auml;hle dein E-Mail-Konto links</li>
+        <li>Aktiviere &bdquo;HTML verwenden&ldquo; unter dem Signaturfeld</li>
+        <li>F&uuml;ge die Signatur in das Textfeld ein (<code>Strg+V</code>)</li>
+        <li>Klicke auf <strong>OK</strong></li>
+      </ol>
+    </div>
 
-</td></tr>
-</table>
+    <div id="tab-webmail" class="tab-content">
+      <h3>Webmail (Gmail, GMX, etc.)</h3>
+      <ol>
+        <li>&Ouml;ffne die Einstellungen deines Webmail-Anbieters</li>
+        <li>Suche den Bereich <strong>Signaturen</strong> oder <strong>E-Mail-Signatur</strong></li>
+        <li>Erstelle eine neue Signatur und f&uuml;ge sie per <code>Strg+V</code> ein</li>
+        <li>Speichern</li>
+      </ol>
+    </div>
+  </div>
 
-</td></tr>
-</table>
+</div>
+
+<script>
+function copySignature(id, btn) {
+  var el = document.getElementById(id);
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  document.execCommand('copy');
+  sel.removeAllRanges();
+  btn.textContent = 'Kopiert!';
+  btn.classList.add('copied');
+  setTimeout(function() {
+    btn.textContent = 'Signatur kopieren';
+    btn.classList.remove('copied');
+  }, 2000);
+}
+
+function showTab(name) {
+  document.querySelectorAll('.tab-content').forEach(function(el) { el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el) { el.classList.remove('active'); });
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
 
 </body>
 </html>
